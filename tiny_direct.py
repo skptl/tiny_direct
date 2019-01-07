@@ -16,6 +16,10 @@ CHARLES = {
     'a': _charles + 'Twitterty'
 }
 
+@app.route('/test/abc')
+def test():
+    return "Test is working!"
+
 @app.route('/<path>')
 def root(path):
     if len(path) > 1:
