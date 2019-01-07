@@ -13,8 +13,8 @@ SEMAL = {
 
 CHARLES = {
     'root': _charles,
-    'a': _charles + 'Twitterty'
-    'b': _charles + 'Sentiment-Analysis'
+    'a': _charles + 'Twitterty',
+    'b': _charles + 'Sentiment-Analysis',
     'c': _charles + 'Note'
 }
 
