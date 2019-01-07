@@ -25,7 +25,7 @@ def root(path):
             else:
                 return redirect(SEMAL['root'], code=302)
         elif path[0] == 'C' or 'c':
-            if and path[1] in CHARLES:
+            if path[1] in CHARLES:
                 return redirect(CHARLES[path[1]], code=302)
             else:
                 return redirect(CHARLES['root'], code=302)
