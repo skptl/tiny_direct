@@ -16,9 +16,9 @@ CHARLES = {
     'a': _charles + 'Twitterty'
 }
 
-@app.route('/test/abc')
+@app.route('/test/awesome')
 def test():
-    return "Test is working!"
+    return "Hi, teddy!"
 
 @app.route('/<path>')
 def root(path):
