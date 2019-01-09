@@ -16,7 +16,9 @@ SEMAL = {
 
 CHARLES = {
     'root': _charles,
-    'a': _charles + 'Twitterty'
+    'a': _charles + 'Twitterty',
+    'b': _charles + 'Sentiment-Analysis',
+    'c': _charles + 'Note'
 }
 
 @app.route('/<path>')
