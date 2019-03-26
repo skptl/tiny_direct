@@ -13,7 +13,7 @@ SEMAL = {
     'a' : _semal + 'SnapNotes',
     'b' : _semal + 'vagabond',
     'c' : _semal + 'Twitterty',
-    'linkedin' : _linkedin_semal
+    'l' : _linkedin_semal
 }
 
 CHARLES = {
@@ -27,7 +27,7 @@ CHARLES = {
 def root(path):
     if path[0] == 'S' or path[0] == 's':
         try:
-            if path[1] in SEMAL:
+            if path[1:] in SEMAL:
                 return redirect(SEMAL[path[1]], code=302)
         except IndexError:
             return redirect(SEMAL['root'], code=302)
