@@ -24,16 +24,13 @@ CHARLES = {
 @app.route('/<path>')
 def root(path):
     if path[0] == 'S' or path[0] == 's':
-        print("semal")
         try:
             if path[1] in SEMAL:
                 return redirect(SEMAL[path[1]], code=302)
         except IndexError:
-            print("semal index")
             return redirect(SEMAL['root'], code=302)
     elif path[0] == 'C' or path[0] == 'c':
         try:
-            print("charles")
             if path[1] in CHARLES:
                 return redirect(CHARLES[path[1]], code=302)
         except IndexError:
