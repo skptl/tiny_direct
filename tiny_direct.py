@@ -3,6 +3,7 @@ from flask import request
 
 app = Flask(__name__)
 
+_linkedin_semal = 'https://www.linkedin.com/in/semal-patel-97905816a'
 _github = 'https://www.github.com/'
 _semal = _github + 'semal259/'
 _charles = _github + 'acharles7/'
@@ -11,7 +12,8 @@ SEMAL = {
     'root' : _semal,
     'a' : _semal + 'SnapNotes',
     'b' : _semal + 'vagabond',
-    'c' : _semal + 'Twitterty'
+    'c' : _semal + 'Twitterty',
+    'linkedin' : _linkedin_semal
 }
 
 CHARLES = {
